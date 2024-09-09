@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    font-family: "Chakra Petch", sans-serif;
+    background-image: url('./imagens/fruits-6688947_1280.jpg');
+    background-size: cover;
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Evita repetição da imagem de fundo */
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    height: 100vh; /* Preenche a altura total da viewport */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Oculta a barra de rolagem */
+}
+h1 {
+    font-size: 2.5rem; /* Tamanho da fonte */
+    color: #f1f1f1; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    letter-spacing: 0.4rem; /* Espaçamento entre letras */
+}
+/* Estiliza as seções da página */
+section {
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
+}
+
+/* Estiliza os inputs dentro das seções */
+section input {
+    width: 25rem; /* Largura dos inputs */
+    border: none; /* Remove a borda padrão */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 1.5rem; /* Borda arredondada */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
+    color: #180101; /* Cor do texto */
+    font-size: 1rem; /* Tamanho da fonte */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estiliza os botões dentro das seções */
+section button {
+    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 1.5rem; /* Borda arredondada */
+    background-color: #094914; /* Cor de fundo do botão */
+    color: #F5F7F8; /* Cor do texto do botão */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Adiciona efeito hover ao botão de pesquisa */
+section button:hover {
+    background-color: #18e239; /* Muda a cor de fundo ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
+}
+/*alteração nos paragrafos */
+.mensagem-busca {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin-top: 10px; /* Adiciona um espaçamento superior para separar da barra de busca */
+    color: #fff; /* Define a cor do texto (ajuste conforme necessário) */
+}
+
+
+.item-resultado img {
+    width: 50px; /* Ajusta a largura da imagem */
+    height: 50px; /* Ajusta a altura da imagem */
+    margin-right: 10px; /* Adiciona um espaço à direita da imagem */
+    border-radius: 50%; /* Cria uma imagem circular (opcional) */
+}
+
+/* estizando a caixa de resultados*/
+.resultados {
+    width: 60rem; /* Largura máxima da caixa de resultados */
+    height: 46vh; /* Altura máxima da caixa de resultados */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 0.6rem; /* Borda arredondada */
+}
+/* Estiliza cada item de resultado */
+.item-resultado {
+    background: #554d4dce;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em uma coluna */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    text-align: center; /* Centraliza o texto */
+}
+
+
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: #121418; /* Cor do texto */
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #5cdb4b; /* Cor do texto dos links */
+    font-weight: bold; /* deixa a fonte em negrito */
+}
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: #15171b; /* Cor do texto */
+    margin: 0.5rem 0; /* Margem acima e abaixo */
+}
+/* Estiliza o rodapé da página */
+footer {
+    background-color: #9aec15; /* Cor de fundo do rodapé */
+    color: #000000; /* Cor do texto */
+    font-weight: bold; /* deixa a fonte em negrito */
+    text-align: center; /* Alinha o texto ao centro */
+    position: fixed; /* deixa o footer fixado independete do conteudo*/
+    bottom: 0;/* Alinha ao fundo da página */
+    left: 0;/*Utiliza a propriedade 'left' para posicionar o elemento em relação à sua posição original.*/
+    width: 100%;/* Largura total da página */
+    font-size: 1rem; /* Tamanho da fonte */
+    
+}
+
+/* Responsividade para tablets e dispositivos menores */
+@media (max-width: 768px) {
+
+    body {
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+        overflow: hidden;
+    }
+
+    h1 {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+    }
+
+    section input {
+        width: 20rem; /* Ajusta a largura dos inputs em telas menores */
+        padding: 0.8rem;
+    }
+
+    .resultados {
+        width: 90%; /* Largura responsiva para a caixa de resultados */
+        height: auto; /* Altura automática para evitar overflow */
+    }
+
+    .item-resultado {
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+        font-size: 0.8em;
+    }
+
+    .item-resultado h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem;
+        letter-spacing: 0.1rem;
+    }
+
+    section input {
+        width: 90%; /* Ajusta a largura dos inputs em telas pequenas */
+    }
+
+    section button {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .resultados {
+        width: 90%;
+        height: auto; /* Altura automática para melhorar responsividade */
+    }
+
+    .item-resultado {
+        border-radius: 0.4rem;
+        text-align: center;
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}

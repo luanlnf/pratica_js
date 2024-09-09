@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Frutas</title> 
+    <link rel="stylesheet" href="main.css"> 
+</head>
+
+<body> 
+    <header> 
+        <div class="container"> <!-- Container para centralizar o conteúdo do cabeçalho -->
+            <h1>Frutas</h1> <!-- Título principal da página -->
+        </div>
+    </header>
+
+    <main> <!-- Elemento principal da página que contém o conteúdo central -->
+        <section> <!-- Seção para entrada de pesquisa -->
+            <input type="text" placeholder="Que fruta desejas?" id="campo-pesquisa"> <!-- Campo de entrada de texto para o usuário digitar o nome da fruta -->
+            <button onclick="pesquisar()">Pesquise</button> <!-- Botão que, ao ser clicado, chama a função JavaScript 'pesquisar()' -->
+        </section>
+        <section class="resultados" id="resultados"> <!-- Seção onde os resultados da pesquisa serão exibidos -->
+        </section>
+    </main>
+
+    <footer> <!-- Rodapé da página -->
+        2024 - Todos os direitos autorais - &copy; <!-- Informação de direitos autorais -->
+    </footer>
+
+    <!-- Inclusão dos scripts JavaScript para adicionar funcionalidade à página -->
+    <script src="frutas.js"></script> <!-- Script externo que contém a lista de frutas -->
+    <script src="main.js"></script> <!-- Script externo que contém a lógica da pesquisa -->
+</body>
+</html>
